@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:hint="Enter Your Weight"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Your Height in.ft"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/height_in"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:hint="Enter Your Height in.in"
+        android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="Calculate BMI"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="422dp"
+        android:layout_height="563dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bk" />
+
+</LinearLayout>
