@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_145sdp"
+        android:src="@color/red" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="@dimen/_38sdp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:contentDescription="banner pic"
+        android:layout_marginStart="@dimen/_140sdp"
+        android:src="@drawable/baseline_photo_camera_24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_423sdp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_140sdp">
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText4"
+            app:layout_constraintStart_toStartOf="@+id/editTextText4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/profile_layout"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Handle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:drawableEnd="@drawable/baseline_edit_24"
+                android:ems="10"
+                android:hint="Add your handle(e.g: @name4556)"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions"
+                android:padding="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:drawableEnd="@drawable/baseline_edit_24"
+                android:ems="10"
+                android:hint="Add a description"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Privacy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Keep me private" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:drawableStart="@drawable/baseline_info_outline_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_7sdp"
+                android:text="Changes made to your name and profile picture are visible only on YouTube and not other Google services"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_115sdp"
+            android:ems="10"
+            android:hint="Your name here"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:drawableEnd="@drawable/circular_edit"
+            android:drawablePadding="@dimen/_7sdp"
+            android:paddingStart="@dimen/_26sdp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:inputType="text"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_profile"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/_2sdp"
+        android:src="@drawable/pic"
+        android:layout_marginStart="@dimen/_7sdp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/_165sdp"
+        android:layout_marginStart="@dimen/_69sdp"
+        android:contentDescription="add profile pic"
+        android:src="@drawable/profile_add" />
+
+</FrameLayout>
